@@ -25,7 +25,7 @@ All assets are organized as **Blender asset libraries**, making them directly ac
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-org>/<repo-name>.git
+git clone https://github.com/stom66/dcl-blender-assets.git
 ```
 
 Or download it as a ZIP if you prefer.
@@ -37,20 +37,22 @@ Or download it as a ZIP if you prefer.
 1. Open **Blender**
 2. Go to **Edit → Preferences → File Paths**
 3. Under **Asset Libraries**, click **+**
-4. Select the root folder of this repository
-5. Give it a name (e.g. `Genesis Plaza Assets`)
+4. Select the `blender` folder inside the `assets` folder of this repository
+5. Double click it to rename it (e.g. `DCL Assets`)
 
-📸 _Screenshot placeholder: Blender Preferences → Asset Libraries_
+📸 _Screenshot: Blender Preferences → File paths → Asset Libraries_
+![Add the new Asset Library under Blender Preferences -> File Paths -> Asset Libraries](docs/blender-preferences-asset-libraries.png)
 
 ---
 
 ### 3. Access the Assets
 
-1. Open the **Asset Browser**
-2. Select your newly added library from the dropdown
-3. Browse assets by category (Props, Materials, etc.)
-
-📸 _Screenshot placeholder: Asset Browser with library selected_
+1. Create a new viewport section
+1. Change the viewport type to **Asset Browser**![Change the Blender viewport type to "Asset Browser"](docs/blender-viewport-type.png)
+2. Select your newly added library from the dropdown  
+![Choose the new asset library from the dropdown](docs/blender-choose-asset-library.png)
+3. Browse assets by category (Props, Materials, etc.)  
+![alt text](docs/blender-asset-libraries.png)
 
 ---
 
@@ -76,38 +78,6 @@ Blender provides two main ways to use assets:
 
 ---
 
-## 🗂️ Suggested Repository Structure
-
-To keep things scalable and future-proof (e.g. adding Substance Painter assets), here’s a recommended structure:
-
-```plaintext
-/assets
-  /blender
-    /props
-      *.blend
-    /materials
-      *.blend
-    /environments
-      *.blend (optional future)
-  
-  /textures
-    /shared
-    /materials
-
-  /substance
-    /sbs
-    /sbsar
-    /exports
-
-/docs
-  screenshots/
-  guides/
-
-/licenses
-  LICENSE.md
-
-README.md
-```
 
 ### Notes:
 - Keep **Blender files modular** (one category or theme per file)
@@ -121,7 +91,7 @@ README.md
 - Assets are marked using Blender’s **Asset Browser system**
 - Collections are structured for easy drag-and-drop usage
 - Naming is consistent and descriptive
-- Optimized for real-time environments where possible
+- Optimized for real-time environments where possible, (e.g., LODs, optimized poly-counts)
 
 ---
 
@@ -146,6 +116,5 @@ If you’d like to add or improve assets:
 
 ## 💡 Future Plans
 
-- Substance Painter material support  
-- Expanded asset categories  
-- Improved documentation and examples  
+- Substance Painter material support?
+- Expanded asset categories
