@@ -97,6 +97,13 @@ Blender provides two main ways to use assets:
 
 ---
 
+## ⛓ Credits
+
+- [Shibu](https://github.com/ShibuyaMartin) - Genesis Plaza assets and materials
+- [Meshroom](https://x.com/meshr00m) - Landscape assets, materials for rocks and ground
+
+---
+
 ## 📜 License
 
 See the license here: [COPYING](COPYING)
