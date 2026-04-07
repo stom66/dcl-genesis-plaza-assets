@@ -48,10 +48,10 @@ Or download it as a ZIP if you prefer.
 ### 3. Access the Assets
 
 1. Create a new viewport section
-1. Change the viewport type to **Asset Browser**![Change the Blender viewport type to "Asset Browser"](docs/blender-viewport-type.png)
-2. Select your newly added library from the dropdown  
+2. Change the viewport type to **Asset Browser**![Change the Blender viewport type to "Asset Browser"](docs/blender-viewport-type.png)
+3. Select your newly added library from the dropdown  
 ![Choose the new asset library from the dropdown](docs/blender-choose-asset-library.png)
-3. Browse assets by category (Props, Materials, etc.)  
+4. Browse assets by category (Props, Materials, etc.)  
 ![alt text](docs/blender-asset-libraries.png)
 
 ---
@@ -61,6 +61,7 @@ Or download it as a ZIP if you prefer.
 Blender provides two main ways to use assets:
 
 ### Append
+
 - Creates a **local copy** of the asset in your file  
 - Fully editable and independent  
 - Changes will **not** affect the original asset  
@@ -70,6 +71,7 @@ Blender provides two main ways to use assets:
 ---
 
 ### Link
+
 - References the asset from the library file  
 - Keeps files lightweight and consistent  
 - Updates to the source asset can propagate  
@@ -78,8 +80,8 @@ Blender provides two main ways to use assets:
 
 ---
 
+### Notes
 
-### Notes:
 - Keep **Blender files modular** (one category or theme per file)
 - Avoid packing textures long-term; instead reference `/textures`
 - Use consistent naming conventions for assets and collections
@@ -108,8 +110,11 @@ See the license here: [COPYING](COPYING)
 Contributions are welcome!  
 
 If you’d like to add or improve assets:
+
 - Follow the existing folder structure
-- Ensure assets are properly marked in Blender
+- Ensure assets are properly marked in Blender and placed in a category
+- Assets must have a single root empty as parent
+- Colliders should be parented to the root empty, not the meshes they represent
 - Keep files clean (remove unused data, apply transforms, etc.)
 
 ---
